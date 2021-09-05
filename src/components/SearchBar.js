@@ -23,10 +23,10 @@ const styles = StyleSheet.create({
     height: 50,
     borderRadius: 10,
     marginHorizontal: 15,
-    padding:20,
+    padding: 20,
   },
-  inputStyle:{
-      fontSize: 18,
+  inputStyle: {
+    fontSize: 18,
   },
 });
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, TextInput, StyleSheet} from 'react-native';
 
-const SearchBar = ({term, onTermChange}) => {
+const SearchBar = ({term, onTermChange, onTermSubmit}) => {
   return (
     <View style={styles.background}>
       <TextInput
@@ -11,6 +11,7 @@ const SearchBar = ({term, onTermChange}) => {
         placeholder="Search"
         value={term}
         onChangeText={newTerm => onTermChange(newTerm)}
+        onEndEditing={() => onTermSubmit()}
       />
     </View>
   );
